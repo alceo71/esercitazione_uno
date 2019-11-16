@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="coloreEtichetta">#999999</color>
+    <color name="coloreValore">#444444</color>
+    <color name="coloreTitolo">#FFFFFF</color>
+    <color name="coloreSfondoTitoloInizio">#102D63</color>
+    <color name="coloreSfondoTitoloFine">#9FB8FA</color>
+</resources>

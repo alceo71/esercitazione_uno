@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Esercitazione uno</string>
+    <string name="mercurio">Mercury</string>
+    <string name="venere">Venus</string>
+    <string name="nettuno">Neptune</string>
+    <string name="terra">Earth</string>
+    <string name="marte">Mars</string>
+    <string name="giove">Jupiter</string>
+    <string name="saturno">Saturn</string>
+    <string name="urano">Uranus</string>
+    <string name="titolo">Solar System Planets</string>
+    <string name="satelliti">Satellites</string>
+    <string name="rotazione">Rotation</string>
+    <string name="rivoluzione">Revolution</string>
+    <string name="panoramica_pianeti">All planets</string>
+    <string name="massa">Mass (earth=1)</string>
+    <string name="diametro">Dianeter (earth=1)</string>
+    <string name="distanza">Distance from the sun</string>
+
+    <!-- valori -->
+    <string name="valore_distanza">%.2f AU</string>
+    <string name="valore_massa">%.2fs (earth = 1)</string>
+    <string name="valore_diametro">%.2fs (earth = 1)</string>
+    <string name="valore_satellite_zero">none</string>
+    <plurals name="valore_satellite">
+        <item quantity="one">%d satellite</item>
+        <item quantity="other">%d satellites</item>
+    </plurals>
+    <string name="valore_rotazione_ore">%d hours</string>
+    <string name="valore_rotazione_giorni">%d days</string>
+    <string name="valore_rivoluzione_giorni">%d days</string>
+    <string name="valore_rivoluzione_anni">%d years</string>
+
+    <string name="introduzione">The <b>Solar System</b> is the gravitationally bound system of the Sun and the objects that orbit it, either directly or indirectly.
+        \nOf the objects that orbit the Sun directly, the largest are the <b>eight planets</b>, with the remainder being smaller objects, such as the <b>five dwarf planets</b> and small Solar System bodies.
+    \nhttps://en.wikipedia.org/wiki/Solar_System</string>
+</resources>

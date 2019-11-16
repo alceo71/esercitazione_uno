@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayout"
+    tools:context=".MainActivity">
+
+    <!-- Immagine grande -->
+
+    <ImageView
+        android:id="@+id/immagine_grande"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/panoramica_pianeti"
+        android:scaleType="fitCenter"
+        android:background="@android:color/black"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_icone"
+        app:layout_constraintDimensionRatio="4:3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pianeti" />
+
+    <!-- PIANETI ROCCIOSI -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_icone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="80dp" />
+
+    <ImageView
+        android:id="@+id/ic_mercurio"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:contentDescription="@string/mercurio"
+        android:onClick="clickSuPianeta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ic_venere"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline_icone"
+        app:srcCompat="@drawable/ic_mercurio" />
+
+
+    <ImageView
+        android:id="@+id/ic_venere"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:contentDescription="@string/venere"
+        android:onClick="clickSuPianeta"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_mercurio"
+        app:layout_constraintEnd_toStartOf="@+id/ic_terra"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ic_mercurio"
+        app:layout_constraintTop_toTopOf="@+id/ic_mercurio"
+        app:srcCompat="@drawable/ic_venere" />
+
+
+    <ImageView
+        android:id="@+id/ic_terra"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:contentDescription="@string/terra"
+        android:onClick="clickSuPianeta"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_venere"
+        app:layout_constraintEnd_toStartOf="@+id/ic_marte"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ic_venere"
+        app:layout_constraintTop_toTopOf="@+id/ic_venere"
+        app:srcCompat="@drawable/ic_terra" />
+
+    <!-- PIANETI GIOVIANI -->
+
+    <ImageView
+        android:id="@+id/ic_marte"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:contentDescription="@string/marte"
+        android:onClick="clickSuPianeta"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_terra"
+        app:layout_constraintEnd_toStartOf="@+id/ic_giove"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ic_terra"
+        app:layout_constraintTop_toTopOf="@+id/ic_terra"
+        app:srcCompat="@drawable/ic_marte" />
+
+    <ImageView
+        android:id="@+id/ic_giove"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:contentDescription="@string/giove"
+        android:onClick="clickSuPianeta"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_marte"
+        app:layout_constraintEnd_toStartOf="@+id/ic_saturno"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ic_marte"
+        app:layout_constraintTop_toTopOf="@+id/ic_marte"
+        app:srcCompat="@drawable/ic_giove" />
+
+    <ImageView
+        android:id="@+id/ic_saturno"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:contentDescription="@string/saturno"
+        android:onClick="clickSuPianeta"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_giove"
+        app:layout_constraintEnd_toStartOf="@+id/ic_urano"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ic_giove"
+        app:layout_constraintTop_toTopOf="@+id/ic_giove"
+        app:srcCompat="@drawable/ic_saturno" />
+
+    <ImageView
+        android:id="@+id/ic_urano"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:contentDescription="@string/urano"
+        android:onClick="clickSuPianeta"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_saturno"
+        app:layout_constraintEnd_toStartOf="@+id/ic_nettuno"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ic_saturno"
+        app:layout_constraintTop_toTopOf="@+id/ic_saturno"
+        app:srcCompat="@drawable/ic_urano" />
+
+    <ImageView
+        android:id="@+id/ic_nettuno"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:contentDescription="@string/nettuno"
+        android:onClick="clickSuPianeta"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_urano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ic_urano"
+        app:layout_constraintTop_toTopOf="@+id/ic_urano"
+        app:srcCompat="@drawable/ic_nettuno" />
+
+
+
+
+
+    <androidx.constraintlayout.widget.Placeholder
+        android:id="@+id/immagine_placeholder"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/immagine_grande"
+        app:layout_constraintStart_toEndOf="@id/immagine_grande"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <TextView
+        android:id="@+id/titolo"
+        style="@style/titolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/titolo"
+
+        app:layout_constraintStart_toEndOf="@+id/immagine_placeholder"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Etichette -->
+
+    <TextView
+        android:id="@+id/distanza"
+        style="@style/etichetta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distanza"
+        app:layout_constraintBottom_toTopOf="@+id/massa"
+        app:layout_constraintStart_toEndOf="@+id/immagine_grande"
+        app:layout_constraintTop_toBottomOf="@+id/titolo" />
+
+    <TextView
+        android:id="@+id/massa"
+        style="@style/etichetta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/massa"
+        app:layout_constraintBottom_toTopOf="@+id/rotazione"
+        app:layout_constraintEnd_toEndOf="@+id/distanza"
+        app:layout_constraintTop_toBottomOf="@+id/distanza" />
+
+    <TextView
+        android:id="@+id/rotazione"
+        style="@style/etichetta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rotazione"
+        app:layout_constraintBottom_toTopOf="@+id/rivoluzione"
+        app:layout_constraintEnd_toEndOf="@+id/massa"
+        app:layout_constraintTop_toBottomOf="@+id/massa" />
+
+    <TextView
+        android:id="@+id/rivoluzione"
+        style="@style/etichetta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rivoluzione"
+        app:layout_constraintBottom_toTopOf="@+id/diametro"
+        app:layout_constraintEnd_toEndOf="@+id/rotazione"
+        app:layout_constraintTop_toBottomOf="@+id/rotazione" />
+
+    <TextView
+        android:id="@+id/diametro"
+        style="@style/etichetta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/diametro"
+        app:layout_constraintBottom_toTopOf="@+id/satelliti"
+        app:layout_constraintEnd_toEndOf="@+id/rivoluzione"
+        app:layout_constraintTop_toBottomOf="@+id/rivoluzione"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <TextView
+        android:id="@+id/satelliti"
+        style="@style/etichetta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/satelliti"
+        app:layout_constraintBottom_toBottomOf="@+id/immagine_grande"
+        app:layout_constraintEnd_toEndOf="@+id/diametro"
+        app:layout_constraintTop_toBottomOf="@+id/diametro" />
+
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barriere_etichette"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="distanza,rivoluzione,rotazione,massa,diametro,satelliti" />
+
+
+    <!-- Valori -->
+    <TextView
+        android:id="@+id/distanza_valore"
+        style="@style/valore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distanza"
+        app:layout_constraintBaseline_toBaselineOf="@+id/distanza"
+        app:layout_constraintStart_toStartOf="@+id/barriere_etichette" />
+
+    <TextView
+        android:id="@+id/massa_valore"
+        style="@style/valore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/massa"
+        app:layout_constraintBaseline_toBaselineOf="@+id/massa"
+        app:layout_constraintStart_toStartOf="@+id/barriere_etichette" />
+
+
+    <TextView
+        android:id="@+id/rotazione_valore"
+        style="@style/valore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rotazione"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rotazione"
+        app:layout_constraintStart_toStartOf="@+id/barriere_etichette" />
+
+
+    <TextView
+        android:id="@+id/rivoluzione_valore"
+        style="@style/valore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rivoluzione"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rivoluzione"
+        app:layout_constraintStart_toStartOf="@+id/barriere_etichette" />
+
+    <TextView
+        android:id="@+id/diametro_valore"
+        style="@style/valore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/diametro"
+        app:layout_constraintBaseline_toBaselineOf="@+id/diametro"
+        app:layout_constraintStart_toStartOf="@+id/barriere_etichette" />
+
+    <TextView
+        android:id="@+id/satelliti_valore"
+        style="@style/valore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/satelliti"
+        app:layout_constraintBaseline_toBaselineOf="@+id/satelliti"
+        app:layout_constraintStart_toStartOf="@+id/barriere_etichette" />
+
+
+    <!-- Gruppo utilizzato per nascondere o mostrare le informazioni su un pianeta -->
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/informazioni_pianeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="distanza,rivoluzione,rotazione,massa,diametro,satelliti,distanza_valore,rivoluzione_valore,rotazione_valore,massa_valore,diametro_valore,satelliti_valore" />
+
+
+    <ScrollView
+        android:id="@+id/scrollIntro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toRightOf="@id/immagine_grande"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/immagine_grande"
+        app:layout_constraintTop_toBottomOf="@id/titolo"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/introduzione_p1"
+        style="@style/introduzione" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/introduzione_p2"
+        style="@style/introduzione"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:text="@string/introduzione_p3"
+        style="@style/introduzione"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/introduzione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="scrollIntro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Esercitazione uno</string>
+    <string name="mercurio">Mercurio</string>
+    <string name="venere">Venere</string>
+    <string name="terra">Terra</string>
+    <string name="marte">Marte</string>
+    <string name="giove">Giove</string>
+    <string name="saturno">Saturno</string>
+    <string name="urano">Urano</string>
+    <string name="nettuno">Nettuno</string>
+    <string name="titolo">I pianeti del sistema solare</string>
+    <string name="panoramica_pianeti">Panoramica pianeti</string>
+    <string name="distanza">Distanza dal sole</string>
+    <string name="massa">Massa</string>
+    <string name="rotazione">Rotazione</string>
+    <string name="rivoluzione">Rivoluzione</string>
+    <string name="diametro">Diametro</string>
+    <string name="satelliti">Satelliti</string>
+
+    <!-- valori -->
+    <string name="valore_distanza">%.2f UA</string>
+    <string name="valore_massa">%.2f (terra = 1)</string>
+    <string name="valore_diametro">%.2fs (terra = 1)</string>
+    <string name="valore_satellite_zero">nessuno</string>
+    <plurals name="valore_satellite">
+        <item quantity="one">%d satellite</item>
+        <item quantity="other">%d satelliti</item>
+    </plurals>
+    <string name="valore_rotazione_ore">%d ore</string>
+    <string name="valore_rotazione_giorni">%d giorni</string>
+    <string name="valore_rivoluzione_giorni">%d giorni</string>
+    <string name="valore_rivoluzione_anni">%d anni</string>
+    <string name="introduzione_p1">Il <b>sistema solare</b> è il sistema planetario costituito da una varietà di corpi celesti mantenuti in orbita dalla forza di gravità del Sole; vi appartiene anche la Terra.</string>
+    <string name="introduzione_p2">È costituito dal <b>Sole</b>, che costituisce da solo il 99,9% della massa di tutto il sistema, da <b>otto pianeti</b> (quattro pianeti rocciosi interni e quattro giganti gassosi esterni) e cinque pianeti nani, dai rispettivi satelliti naturali, e da moltissimi altri corpi minori.</string>
+    <string name="introduzione_p3">https://it.wikipedia.org/wiki/Sistema_solare</string>
+</resources>
