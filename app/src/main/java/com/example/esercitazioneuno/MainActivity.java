@@ -70,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
         pianeti = PianetaService.findAll();
 
 
+        visualizzazioneIntro = true;
+
         // trova gli elementi con contenuto dinamico
         titolo = findViewById(R.id.titolo);
         distanzaValore = findViewById(R.id.distanza_valore);
@@ -102,8 +104,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Controlla se un pianeta esiste già
         if(savedInstanceState != null && savedInstanceState.getString(BUNDLE_PIANETA) != null){
-            visualizzazioneIntro = false;
-
             String nomePianeta = savedInstanceState.getString(BUNDLE_PIANETA);
             LogUtil.warn("Trovato il pianeta " + nomePianeta);
 
@@ -111,8 +111,6 @@ public class MainActivity extends AppCompatActivity {
             ImageView support = findViewById(idPianeta);
             LogUtil.debug("Risorsa associata a  " + idPianeta + " è " + support);
             caricaValoriPianeta(support);
-        } else {
-            visualizzazioneIntro = true;
         }
 
         // Se non esiste già creo la mia gestione Back
@@ -254,7 +252,6 @@ public class MainActivity extends AppCompatActivity {
 
             TransitionManager.beginDelayedTransition(constraintLayout);
             placeholder.setContentId(R.id.immagine_placeholder);
-
         }
 
         visualizzazioneIntro = true;
